@@ -1,0 +1,134 @@
+/* GENERALES */
+@font-face {
+    font-family: "Montserrat";
+    src: url('/font/Montserrat-Regular.ttf');
+}
+
+html{
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,p {
+    margin: 0;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* PERFIL ******************************/
+.foto-perfil{
+    background-image: url('./profilePhoto.png');
+    background-size: cover;
+    border-radius: 15%;
+    width: 20vw;
+    height: 20vw;
+    margin: 40px auto 20px;
+}
+
+.nombre p{
+    font-size: 20px;
+    font-weight: 600;
+    color:  #4E5150;
+    margin-bottom: 20px;
+}
+
+.lugar p{
+    font-size: 15px;
+    font-weight: 600;
+    color:  #A9A9A9;
+    margin-bottom: 20px;
+}
+
+.datos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.post,.followers,.following{
+    background-color:  #E5E5E5;
+    width: 100px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* FOTOS *******************************/
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+    grid-gap: 20px;
+    width:fit-content;
+    margin: 0 auto 50px;
+    
+}
+
+.foto1,.foto2,.foto3,.foto4,.foto5,.foto6{
+    border-radius: 10px;
+}
+
+.foto1{
+    background-image: url('./photo1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column:1/2 ;
+    grid-row: 1/2;
+
+}
+.foto2{
+    background-image: url('./photo2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column:2/4 ;
+    grid-row: 1/2;
+}
+.foto3{
+    background-image: url('./photo3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column:1/3 ;
+    grid-row: 2/3;
+}
+.foto4{
+    background-image: url('./photo4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column:3/4 ;
+    grid-row: 2/4;
+}
+.foto5{
+    background-image: url('./photo6.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column:1/2 ;
+    grid-row: 3/4;
+}
+.foto6{
+    background-image: url('./photo5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column:2/3 ;
+    grid-row: 3/4;
+}
+
+/* FOOTER ********************************/
+footer p{
+    text-align: center;
+    color: #B9BDCF;
+}
